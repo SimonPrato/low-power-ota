@@ -18,11 +18,8 @@ The initial design focused on achieving high gm/ID ratio by operating the PMOS i
 - **Input transistor current:** ID = IB/2 = 500 nA
 - **Achievable transconductance:** gm ≈ 13 µS
 
-<p align="center">
-  <img src="img/figure1.png" alt="PMOS gm/ID Ratio">
-  <br>
-  <em>Figure 1: LPMOS gm/ID-ratio characteristics</em>
-</p>
+![PMOS gm/ID Ratio](img/figure1.png)  
+*Figure 1: LPMOS gm/ID-ratio characteristics*
 
 #### Key Design Parameters
 
@@ -32,11 +29,8 @@ The initial design focused on achieving high gm/ID ratio by operating the PMOS i
 - VSG ≈ 500 mV (subthreshold operation)
 - Common mode voltage: VCM = 360 mV
 
-<p align="center">
-  <img src="img/figure2.png" alt="Threshold Voltage vs Length">
-  <br>
-  <em>Figure 2: Threshold voltage dependency on channel length</em>
-</p>
+![Threshold Voltage vs Length](img/figure2.png)  
+*Figure 2: Threshold voltage dependency on channel length*
 
 **NMOS Current Mirror:**
 - Width: W = 0.35 µm (minimum)
@@ -56,11 +50,8 @@ The initial design focused on achieving high gm/ID ratio by operating the PMOS i
 - **Overall transconductance:** Gm = 11.8 µS ❌ (does not meet Gm < 5µS requirement)
 - **DC output voltage:** 249.8 mV
 
-<p align="center">
-  <img src="img/figure3.png" alt="Initial OTA Gain">
-  <br>
-  <em>Figure 3: AC gain of initial OTA design</em>
-</p>
+![Initial OTA Gain](img/figure3.png)  
+*Figure 3: AC gain of initial OTA design*
 
 ---
 
@@ -90,11 +81,8 @@ Where N = 2 (number of transistors per branch), resulting in:
 - Series transistors: At output branches (M7, M8)
 - Parallel transistors: At gain stage (M9-M12)
 
-<p align="center">
-  <img src="img/figure4.png" alt="gm vs NMOS Length">
-  <br>
-  <em>Figure 4: Input pair gm versus NMOS length at VCM = 0V</em>
-</p>
+![gm vs NMOS Length](img/figure4.png)  
+*Figure 4: Input pair gm versus NMOS length at VCM = 0V*
 
 **PMOS Current Mirror:**
 - Width: W = 135.72 µm (adjusted for DC bias)
@@ -106,11 +94,8 @@ Where N = 2 (number of transistors per branch), resulting in:
 - VSG = 677.30 mV
 - Vds,sat ≈ 60 mV (sufficient headroom)
 
-<p align="center">
-  <img src="img/figure7.png" alt="Bias Current vs VSG">
-  <br>
-  <em>Figure 7: Bias current dependency on VSG and width</em>
-</p>
+![Bias Current vs VSG](img/figure7.png)  
+*Figure 7: Bias current dependency on VSG and width*
 
 #### Final Performance
 - **Overall transconductance:** Gm = 3.50 µS ✅ (meets requirement)
@@ -118,21 +103,15 @@ Where N = 2 (number of transistors per branch), resulting in:
 - **DC gain:** A0 = GmRout = 30.37 (29.65 dB)
 - **DC output bias:** 501.1 mV (VDD/2)
 
-<p align="center">
-  <img src="img/figure5.png" alt="Final OTA Gain">
-  <br>
-  <em>Figure 5: AC gain of final OTA design at VCM = 300mV</em>
-</p>
+![Final OTA Gain](img/figure5.png)  
+*Figure 5: AC gain of final OTA design at VCM = 300mV*
 
 ---
 
 ## Final Schematic
 
-<p align="center">
-  <img src="img/figure6.png" alt="Final Schematic">
-  <br>
-  <em>Figure 6: Complete OTA schematic with DC node voltages</em>
-</p>
+![Final Schematic](img/figure6.png)  
+*Figure 6: Complete OTA schematic with DC node voltages*
 
 ### Transistor Operating Points
 
@@ -189,3 +168,4 @@ The OTA's performance is heavily dependent on the input common mode voltage VCM:
 | DC Output Bias | ~VDD/2 | 501.1 mV | ✅ |
 
 ---
+
