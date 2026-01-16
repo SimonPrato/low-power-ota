@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      ist1117175
+HostName                       fatima.novalocal
+ProcessIdentifier              2326
+ProcessCreationTime_UTC        1759483163
+ProcessCreationTime_Readable   Fri Oct  3 10:19:23 2025 WEST
+AppIdentifier                  /opt/ic_tools/cad/ic617_hf704/tools/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       
+FilePathUsedToEditLock         /afs/.ist.utl.pt/users/7/5/ist1117175/CADENCE/low_gm_ota/bias_transistor/constraint/prop.cfg
+TimeEditLocked                 Fri Oct  3 10:21:37 2025 WEST

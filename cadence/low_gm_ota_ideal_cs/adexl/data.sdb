@@ -1,0 +1,2257 @@
+<?xml version="1.0"?>
+<setupdb version="5">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test enabled="1">wdp_sweep
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>low_gm_ota_2</value>
+					</option>
+					<option>lib
+						<value>low_gm_ota</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>wdp_sweep_active</value>
+					</option>
+				</tooloptions>
+				<outputs>
+					<output>/vcm
+						<evalType>point</evalType>
+					</output>
+					<output>/nmos2
+						<evalType>point</evalType>
+					</output>
+					<output>gm/id
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+				<origoptions>
+					<option>cell
+						<value>low_gm_ota_2</value>
+					</option>
+					<option>lib
+						<value>low_gm_ota</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+			<test enabled="1">wn_sweep
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>low_gm_ota_2</value>
+					</option>
+					<option>lib
+						<value>low_gm_ota</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>wn_sweep_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>low_gm_ota_2</value>
+					</option>
+					<option>lib
+						<value>low_gm_ota</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+				<outputs>
+					<output>/nmos2
+						<evalType>point</evalType>
+					</output>
+					<output>/vcm
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+			</test>
+			<test enabled="1">ln_sweep
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>low_gm_ota_2</value>
+					</option>
+					<option>lib
+						<value>low_gm_ota</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>ln_sweep_active</value>
+					</option>
+				</tooloptions>
+				<outputs>
+					<output>/vcm
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+				<origoptions>
+					<option>cell
+						<value>low_gm_ota_2</value>
+					</option>
+					<option>lib
+						<value>low_gm_ota</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+			<test enabled="1">wp_sweep
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>low_gm_ota_2</value>
+					</option>
+					<option>lib
+						<value>low_gm_ota</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>wp_sweep_active</value>
+					</option>
+				</tooloptions>
+				<outputs>
+					<output>/vout
+						<evalType>point</evalType>
+					</output>
+					<output>OS("/MP0" "gds")
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+				<origoptions>
+					<option>cell
+						<value>low_gm_ota_2</value>
+					</option>
+					<option>lib
+						<value>low_gm_ota</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+			<test enabled="1">dc_op
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>low_gm_ota_2</value>
+					</option>
+					<option>lib
+						<value>low_gm_ota</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>dc_op_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>low_gm_ota_2</value>
+					</option>
+					<option>lib
+						<value>low_gm_ota</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+			<test enabled="1">vcm_sweep
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>low_gm_ota_2</value>
+					</option>
+					<option>lib
+						<value>low_gm_ota</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>vcm_sweep_active</value>
+					</option>
+				</tooloptions>
+				<outputs>
+					<output>/vcm
+						<evalType>point</evalType>
+					</output>
+					<output>(VDC("/vcm") - VDC("/vin+"))
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+				<origoptions>
+					<option>cell
+						<value>low_gm_ota_2</value>
+					</option>
+					<option>lib
+						<value>low_gm_ota</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+			<test enabled="1">ac_gain
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>low_gm_ota_2</value>
+					</option>
+					<option>lib
+						<value>low_gm_ota</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>ac_gain_active</value>
+					</option>
+				</tooloptions>
+				<outputs>
+					<output>/vout
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+				<origoptions>
+					<option>cell
+						<value>low_gm_ota_2</value>
+					</option>
+					<option>lib
+						<value>low_gm_ota</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+			<test enabled="1">ac_rout
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>low_gm_ota_2</value>
+					</option>
+					<option>lib
+						<value>low_gm_ota</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>ac_rout_active</value>
+					</option>
+				</tooloptions>
+				<outputs>
+					<output>/vout
+						<evalType>point</evalType>
+					</output>
+					<output>(VF("/vout") / IF("/I7/MINUS"))
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+				<origoptions>
+					<option>cell
+						<value>low_gm_ota_2</value>
+					</option>
+					<option>lib
+						<value>low_gm_ota</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+			<test enabled="1">ldp_sweep
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>low_gm_ota_2</value>
+					</option>
+					<option>lib
+						<value>low_gm_ota</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>ldp_sweep_active</value>
+					</option>
+				</tooloptions>
+				<outputs>
+					<output>/vcm
+						<evalType>point</evalType>
+					</output>
+					<output>OS("/MP0" "gds")
+						<evalType>point</evalType>
+					</output>
+					<output>OS("/MP4" "gm")
+						<evalType>point</evalType>
+					</output>
+					<output>OS("/MP4" "vth")
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+				<origoptions>
+					<option>cell
+						<value>low_gm_ota_2</value>
+					</option>
+					<option>lib
+						<value>low_gm_ota</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+		</tests>
+		<vars>
+			<var>Ln
+				<value>2.5u</value>
+				<dependentTests>
+					<dependentTest enabled="1">wdp_sweep</dependentTest>
+					<dependentTest enabled="1">wn_sweep</dependentTest>
+					<dependentTest enabled="1">ln_sweep</dependentTest>
+					<dependentTest enabled="1">wp_sweep</dependentTest>
+					<dependentTest enabled="1">dc_op</dependentTest>
+					<dependentTest enabled="1">vcm_sweep</dependentTest>
+					<dependentTest enabled="1">ac_gain</dependentTest>
+					<dependentTest enabled="1">ac_rout</dependentTest>
+					<dependentTest enabled="1">ldp_sweep</dependentTest>
+				</dependentTests>
+			</var>
+			<var>vcm
+				<value>0.3</value>
+				<dependentTests>
+					<dependentTest enabled="1">wdp_sweep</dependentTest>
+					<dependentTest enabled="1">wn_sweep</dependentTest>
+					<dependentTest enabled="1">ln_sweep</dependentTest>
+					<dependentTest enabled="1">wp_sweep</dependentTest>
+					<dependentTest enabled="1">dc_op</dependentTest>
+					<dependentTest enabled="1">vcm_sweep</dependentTest>
+					<dependentTest enabled="1">ac_gain</dependentTest>
+					<dependentTest enabled="1">ac_rout</dependentTest>
+					<dependentTest enabled="1">ldp_sweep</dependentTest>
+				</dependentTests>
+			</var>
+			<var>vd
+				<value>0</value>
+				<dependentTests>
+					<dependentTest enabled="1">wdp_sweep</dependentTest>
+					<dependentTest enabled="1">wn_sweep</dependentTest>
+					<dependentTest enabled="1">ln_sweep</dependentTest>
+					<dependentTest enabled="1">wp_sweep</dependentTest>
+					<dependentTest enabled="1">dc_op</dependentTest>
+					<dependentTest enabled="1">vcm_sweep</dependentTest>
+					<dependentTest enabled="0">ac_gain</dependentTest>
+					<dependentTest enabled="1">ac_rout</dependentTest>
+					<dependentTest enabled="1">ldp_sweep</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Wdp
+				<value>200u</value>
+				<dependentTests>
+					<dependentTest enabled="1">wdp_sweep</dependentTest>
+					<dependentTest enabled="1">wn_sweep</dependentTest>
+					<dependentTest enabled="1">ln_sweep</dependentTest>
+					<dependentTest enabled="1">wp_sweep</dependentTest>
+					<dependentTest enabled="1">dc_op</dependentTest>
+					<dependentTest enabled="1">vcm_sweep</dependentTest>
+					<dependentTest enabled="1">ac_gain</dependentTest>
+					<dependentTest enabled="1">ac_rout</dependentTest>
+					<dependentTest enabled="1">ldp_sweep</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Wn
+				<value>0.35u</value>
+				<dependentTests>
+					<dependentTest enabled="1">wdp_sweep</dependentTest>
+					<dependentTest enabled="1">wn_sweep</dependentTest>
+					<dependentTest enabled="1">ln_sweep</dependentTest>
+					<dependentTest enabled="1">wp_sweep</dependentTest>
+					<dependentTest enabled="1">dc_op</dependentTest>
+					<dependentTest enabled="1">vcm_sweep</dependentTest>
+					<dependentTest enabled="1">ac_gain</dependentTest>
+					<dependentTest enabled="1">ac_rout</dependentTest>
+					<dependentTest enabled="1">ldp_sweep</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Wp
+				<value>60u</value>
+				<dependentTests>
+					<dependentTest enabled="1">wp_sweep</dependentTest>
+					<dependentTest enabled="1">dc_op</dependentTest>
+					<dependentTest omitted="0">wdp_sweep</dependentTest>
+					<dependentTest enabled="1">vcm_sweep</dependentTest>
+					<dependentTest omitted="0">ln_sweep</dependentTest>
+					<dependentTest enabled="1">ac_gain</dependentTest>
+					<dependentTest enabled="1">ac_rout</dependentTest>
+					<dependentTest enabled="1">ldp_sweep</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Lp
+				<value>0.37u</value>
+				<dependentTests>
+					<dependentTest omitted="0">wp_sweep</dependentTest>
+					<dependentTest omitted="0">dc_op</dependentTest>
+					<dependentTest enabled="1">ac_gain</dependentTest>
+					<dependentTest enabled="1">ac_rout</dependentTest>
+					<dependentTest enabled="1">ldp_sweep</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="1">iac
+				<value>0</value>
+				<dependentTests>
+					<dependentTest enabled="0">ac_rout</dependentTest>
+					<dependentTest enabled="1">ldp_sweep</dependentTest>
+					<dependentTest omitted="0">dc_op</dependentTest>
+					<dependentTest omitted="0">ac_gain</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Ldp
+				<value>0.647u</value>
+				<dependentTests>
+					<dependentTest enabled="1">ldp_sweep</dependentTest>
+					<dependentTest omitted="0">ac_rout</dependentTest>
+					<dependentTest omitted="0">dc_op</dependentTest>
+					<dependentTest omitted="0">ac_gain</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+		</plottingoptions>
+		<disabledtests>
+			<test>wn_sweep</test>
+			<test>wdp_sweep</test>
+			<test>vcm_sweep</test>
+			<test>ln_sweep</test>
+			<test>wp_sweep</test>
+			<test>ldp_sweep</test>
+			<test>ac_rout</test>
+			<test>ac_gain</test>
+		</disabledtests>
+	</active>
+	<history>History
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.0
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">wdp_sweep
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>wdp_sweep_none_Interactive.0</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>/vcm
+								<evalType>point</evalType>
+							</output>
+							<output>/nmos2
+								<evalType>point</evalType>
+							</output>
+							<output>gm/id
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">wn_sweep
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>wn_sweep_none_Interactive.0</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>/nmos2
+								<evalType>point</evalType>
+							</output>
+							<output>/vcm
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">ln_sweep
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ln_sweep_none_Interactive.0</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>/vcm
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">wp_sweep
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>wp_sweep_none_Interactive.0</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>/vout
+								<evalType>point</evalType>
+							</output>
+							<output>OS("/MP0" "gds")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">dc_op
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>dc_op_none_Interactive.0</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">vcm_sweep
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>vcm_sweep_none_Interactive.0</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>/vcm
+								<evalType>point</evalType>
+							</output>
+							<output>(VDC("/vcm") - VDC("/vin+"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">ac_gain
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ac_gain_none_Interactive.0</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>/vout
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">ac_rout
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ac_rout_none_Interactive.0</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>/vout
+								<evalType>point</evalType>
+							</output>
+							<output>(VF("/vout") / IF("/I7/MINUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">ldp_sweep
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ldp_sweep_none_Interactive.0</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>/vcm
+								<evalType>point</evalType>
+							</output>
+							<output>OS("/MP0" "gds")
+								<evalType>point</evalType>
+							</output>
+							<output>OS("/MP4" "gm")
+								<evalType>point</evalType>
+							</output>
+							<output>OS("/MP4" "vth")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Ln
+						<value>2.5u</value>
+						<dependentTests>
+							<dependentTest enabled="1">wdp_sweep</dependentTest>
+							<dependentTest enabled="1">wn_sweep</dependentTest>
+							<dependentTest enabled="1">ln_sweep</dependentTest>
+							<dependentTest enabled="1">wp_sweep</dependentTest>
+							<dependentTest enabled="1">dc_op</dependentTest>
+							<dependentTest enabled="1">vcm_sweep</dependentTest>
+							<dependentTest enabled="1">ac_gain</dependentTest>
+							<dependentTest enabled="1">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>0.3</value>
+						<dependentTests>
+							<dependentTest enabled="1">wdp_sweep</dependentTest>
+							<dependentTest enabled="1">wn_sweep</dependentTest>
+							<dependentTest enabled="1">ln_sweep</dependentTest>
+							<dependentTest enabled="1">wp_sweep</dependentTest>
+							<dependentTest enabled="1">dc_op</dependentTest>
+							<dependentTest enabled="1">vcm_sweep</dependentTest>
+							<dependentTest enabled="1">ac_gain</dependentTest>
+							<dependentTest enabled="1">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vd
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">wdp_sweep</dependentTest>
+							<dependentTest enabled="1">wn_sweep</dependentTest>
+							<dependentTest enabled="1">ln_sweep</dependentTest>
+							<dependentTest enabled="1">wp_sweep</dependentTest>
+							<dependentTest enabled="1">dc_op</dependentTest>
+							<dependentTest enabled="1">vcm_sweep</dependentTest>
+							<dependentTest enabled="0">ac_gain</dependentTest>
+							<dependentTest enabled="1">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wdp
+						<value>200u</value>
+						<dependentTests>
+							<dependentTest enabled="1">wdp_sweep</dependentTest>
+							<dependentTest enabled="1">wn_sweep</dependentTest>
+							<dependentTest enabled="1">ln_sweep</dependentTest>
+							<dependentTest enabled="1">wp_sweep</dependentTest>
+							<dependentTest enabled="1">dc_op</dependentTest>
+							<dependentTest enabled="1">vcm_sweep</dependentTest>
+							<dependentTest enabled="1">ac_gain</dependentTest>
+							<dependentTest enabled="1">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wn
+						<value>0.35u</value>
+						<dependentTests>
+							<dependentTest enabled="1">wdp_sweep</dependentTest>
+							<dependentTest enabled="1">wn_sweep</dependentTest>
+							<dependentTest enabled="1">ln_sweep</dependentTest>
+							<dependentTest enabled="1">wp_sweep</dependentTest>
+							<dependentTest enabled="1">dc_op</dependentTest>
+							<dependentTest enabled="1">vcm_sweep</dependentTest>
+							<dependentTest enabled="1">ac_gain</dependentTest>
+							<dependentTest enabled="1">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>60u</value>
+						<dependentTests>
+							<dependentTest enabled="1">wp_sweep</dependentTest>
+							<dependentTest enabled="1">dc_op</dependentTest>
+							<dependentTest omitted="0">wdp_sweep</dependentTest>
+							<dependentTest enabled="1">vcm_sweep</dependentTest>
+							<dependentTest omitted="0">ln_sweep</dependentTest>
+							<dependentTest enabled="1">ac_gain</dependentTest>
+							<dependentTest enabled="1">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>0.37u</value>
+						<dependentTests>
+							<dependentTest omitted="0">wp_sweep</dependentTest>
+							<dependentTest omitted="0">dc_op</dependentTest>
+							<dependentTest enabled="1">ac_gain</dependentTest>
+							<dependentTest enabled="1">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">iac
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="0">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+							<dependentTest omitted="0">dc_op</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ldp
+						<value>0.647u</value>
+						<dependentTests>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+							<dependentTest omitted="0">ac_rout</dependentTest>
+							<dependentTest omitted="0">dc_op</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>wn_sweep</test>
+					<test>wdp_sweep</test>
+					<test>vcm_sweep</test>
+					<test>ln_sweep</test>
+					<test>wp_sweep</test>
+					<test>ac_gain</test>
+					<test>ac_rout</test>
+					<test>ldp_sweep</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 5 14:43:59 2025</timestamp>
+			<resultsname>/afs/.ist.utl.pt/users/7/5/ist1117175/CADENCE/low_gm_ota/low_gm_ota_2/adexl/results/data/Interactive.0.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.0.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/fatima.novalocal_ist1117175_144359268</localpsfdir>
+			<psfdir>/afs/.ist.utl.pt/users/7/5/ist1117175/CADENCE/Sim/low_gm_ota/low_gm_ota_2/adexl/results/data/Interactive.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/low_gm_ota/low_gm_ota_2/adexl/results/data/Interactive.0</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/afs/.ist.utl.pt/users/7/5/ist1117175/CADENCE/low_gm_ota/low_gm_ota_2/adexl/results/data/Interactive.0.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.0.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.1
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">wdp_sweep
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>wdp_sweep_none_Interactive.1</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>/vcm
+								<evalType>point</evalType>
+							</output>
+							<output>/nmos2
+								<evalType>point</evalType>
+							</output>
+							<output>gm/id
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">wn_sweep
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>wn_sweep_none_Interactive.1</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>/nmos2
+								<evalType>point</evalType>
+							</output>
+							<output>/vcm
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">ln_sweep
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ln_sweep_none_Interactive.1</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>/vcm
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">wp_sweep
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>wp_sweep_none_Interactive.1</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>/vout
+								<evalType>point</evalType>
+							</output>
+							<output>OS("/MP0" "gds")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">dc_op
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>dc_op_none_Interactive.1</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">vcm_sweep
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>vcm_sweep_none_Interactive.1</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>/vcm
+								<evalType>point</evalType>
+							</output>
+							<output>(VDC("/vcm") - VDC("/vin+"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">ac_gain
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ac_gain_none_Interactive.1</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>/vout
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">ac_rout
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ac_rout_none_Interactive.1</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>/vout
+								<evalType>point</evalType>
+							</output>
+							<output>(VF("/vout") / IF("/I7/MINUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">ldp_sweep
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ldp_sweep_none_Interactive.1</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>/vcm
+								<evalType>point</evalType>
+							</output>
+							<output>OS("/MP0" "gds")
+								<evalType>point</evalType>
+							</output>
+							<output>OS("/MP4" "gm")
+								<evalType>point</evalType>
+							</output>
+							<output>OS("/MP4" "vth")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Ln
+						<value>2.5u</value>
+						<dependentTests>
+							<dependentTest enabled="1">wdp_sweep</dependentTest>
+							<dependentTest enabled="1">wn_sweep</dependentTest>
+							<dependentTest enabled="1">ln_sweep</dependentTest>
+							<dependentTest enabled="1">wp_sweep</dependentTest>
+							<dependentTest enabled="1">dc_op</dependentTest>
+							<dependentTest enabled="1">vcm_sweep</dependentTest>
+							<dependentTest enabled="1">ac_gain</dependentTest>
+							<dependentTest enabled="1">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>0.3</value>
+						<dependentTests>
+							<dependentTest enabled="1">wdp_sweep</dependentTest>
+							<dependentTest enabled="1">wn_sweep</dependentTest>
+							<dependentTest enabled="1">ln_sweep</dependentTest>
+							<dependentTest enabled="1">wp_sweep</dependentTest>
+							<dependentTest enabled="1">dc_op</dependentTest>
+							<dependentTest enabled="1">vcm_sweep</dependentTest>
+							<dependentTest enabled="1">ac_gain</dependentTest>
+							<dependentTest enabled="1">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vd
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">wdp_sweep</dependentTest>
+							<dependentTest enabled="1">wn_sweep</dependentTest>
+							<dependentTest enabled="1">ln_sweep</dependentTest>
+							<dependentTest enabled="1">wp_sweep</dependentTest>
+							<dependentTest enabled="1">dc_op</dependentTest>
+							<dependentTest enabled="1">vcm_sweep</dependentTest>
+							<dependentTest enabled="0">ac_gain</dependentTest>
+							<dependentTest enabled="1">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wdp
+						<value>200u</value>
+						<dependentTests>
+							<dependentTest enabled="1">wdp_sweep</dependentTest>
+							<dependentTest enabled="1">wn_sweep</dependentTest>
+							<dependentTest enabled="1">ln_sweep</dependentTest>
+							<dependentTest enabled="1">wp_sweep</dependentTest>
+							<dependentTest enabled="1">dc_op</dependentTest>
+							<dependentTest enabled="1">vcm_sweep</dependentTest>
+							<dependentTest enabled="1">ac_gain</dependentTest>
+							<dependentTest enabled="1">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wn
+						<value>0.35u</value>
+						<dependentTests>
+							<dependentTest enabled="1">wdp_sweep</dependentTest>
+							<dependentTest enabled="1">wn_sweep</dependentTest>
+							<dependentTest enabled="1">ln_sweep</dependentTest>
+							<dependentTest enabled="1">wp_sweep</dependentTest>
+							<dependentTest enabled="1">dc_op</dependentTest>
+							<dependentTest enabled="1">vcm_sweep</dependentTest>
+							<dependentTest enabled="1">ac_gain</dependentTest>
+							<dependentTest enabled="1">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>60u</value>
+						<dependentTests>
+							<dependentTest enabled="1">wp_sweep</dependentTest>
+							<dependentTest enabled="1">dc_op</dependentTest>
+							<dependentTest omitted="0">wdp_sweep</dependentTest>
+							<dependentTest enabled="1">vcm_sweep</dependentTest>
+							<dependentTest omitted="0">ln_sweep</dependentTest>
+							<dependentTest enabled="1">ac_gain</dependentTest>
+							<dependentTest enabled="1">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>0.37u</value>
+						<dependentTests>
+							<dependentTest omitted="0">wp_sweep</dependentTest>
+							<dependentTest omitted="0">dc_op</dependentTest>
+							<dependentTest enabled="1">ac_gain</dependentTest>
+							<dependentTest enabled="1">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">iac
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="0">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+							<dependentTest omitted="0">dc_op</dependentTest>
+							<dependentTest omitted="0">ac_gain</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ldp
+						<value>0.647u</value>
+						<dependentTests>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+							<dependentTest omitted="0">ac_rout</dependentTest>
+							<dependentTest omitted="0">dc_op</dependentTest>
+							<dependentTest omitted="0">ac_gain</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>wn_sweep</test>
+					<test>wdp_sweep</test>
+					<test>vcm_sweep</test>
+					<test>ln_sweep</test>
+					<test>wp_sweep</test>
+					<test>ldp_sweep</test>
+					<test>dc_op</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 5 14:50:19 2025</timestamp>
+			<resultsname>/afs/.ist.utl.pt/users/7/5/ist1117175/CADENCE/low_gm_ota/low_gm_ota_2/adexl/results/data/Interactive.1.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.1.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/fatima.novalocal_ist1117175_145019524</localpsfdir>
+			<psfdir>/afs/.ist.utl.pt/users/7/5/ist1117175/CADENCE/Sim/low_gm_ota/low_gm_ota_2/adexl/results/data/Interactive.1</psfdir>
+			<simdir>$AXL_PROJECT_DIR/low_gm_ota/low_gm_ota_2/adexl/results/data/Interactive.1</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/afs/.ist.utl.pt/users/7/5/ist1117175/CADENCE/low_gm_ota/low_gm_ota_2/adexl/results/data/Interactive.1.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.1.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.2
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">wdp_sweep
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>wdp_sweep_none_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>/vcm
+								<evalType>point</evalType>
+							</output>
+							<output>/nmos2
+								<evalType>point</evalType>
+							</output>
+							<output>gm/id
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">wn_sweep
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>wn_sweep_none_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>/nmos2
+								<evalType>point</evalType>
+							</output>
+							<output>/vcm
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">ln_sweep
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ln_sweep_none_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>/vcm
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">wp_sweep
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>wp_sweep_none_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>/vout
+								<evalType>point</evalType>
+							</output>
+							<output>OS("/MP0" "gds")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">dc_op
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>dc_op_none_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">vcm_sweep
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>vcm_sweep_none_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>/vcm
+								<evalType>point</evalType>
+							</output>
+							<output>(VDC("/vcm") - VDC("/vin+"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">ac_gain
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ac_gain_none_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>/vout
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">ac_rout
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ac_rout_none_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>/vout
+								<evalType>point</evalType>
+							</output>
+							<output>(VF("/vout") / IF("/I7/MINUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">ldp_sweep
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ldp_sweep_none_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>/vcm
+								<evalType>point</evalType>
+							</output>
+							<output>OS("/MP0" "gds")
+								<evalType>point</evalType>
+							</output>
+							<output>OS("/MP4" "gm")
+								<evalType>point</evalType>
+							</output>
+							<output>OS("/MP4" "vth")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>low_gm_ota_2</value>
+							</option>
+							<option>lib
+								<value>low_gm_ota</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Ln
+						<value>2.5u</value>
+						<dependentTests>
+							<dependentTest enabled="1">wdp_sweep</dependentTest>
+							<dependentTest enabled="1">wn_sweep</dependentTest>
+							<dependentTest enabled="1">ln_sweep</dependentTest>
+							<dependentTest enabled="1">wp_sweep</dependentTest>
+							<dependentTest enabled="1">dc_op</dependentTest>
+							<dependentTest enabled="1">vcm_sweep</dependentTest>
+							<dependentTest enabled="1">ac_gain</dependentTest>
+							<dependentTest enabled="1">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>0.3</value>
+						<dependentTests>
+							<dependentTest enabled="1">wdp_sweep</dependentTest>
+							<dependentTest enabled="1">wn_sweep</dependentTest>
+							<dependentTest enabled="1">ln_sweep</dependentTest>
+							<dependentTest enabled="1">wp_sweep</dependentTest>
+							<dependentTest enabled="1">dc_op</dependentTest>
+							<dependentTest enabled="1">vcm_sweep</dependentTest>
+							<dependentTest enabled="1">ac_gain</dependentTest>
+							<dependentTest enabled="1">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vd
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">wdp_sweep</dependentTest>
+							<dependentTest enabled="1">wn_sweep</dependentTest>
+							<dependentTest enabled="1">ln_sweep</dependentTest>
+							<dependentTest enabled="1">wp_sweep</dependentTest>
+							<dependentTest enabled="1">dc_op</dependentTest>
+							<dependentTest enabled="1">vcm_sweep</dependentTest>
+							<dependentTest enabled="0">ac_gain</dependentTest>
+							<dependentTest enabled="1">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wdp
+						<value>200u</value>
+						<dependentTests>
+							<dependentTest enabled="1">wdp_sweep</dependentTest>
+							<dependentTest enabled="1">wn_sweep</dependentTest>
+							<dependentTest enabled="1">ln_sweep</dependentTest>
+							<dependentTest enabled="1">wp_sweep</dependentTest>
+							<dependentTest enabled="1">dc_op</dependentTest>
+							<dependentTest enabled="1">vcm_sweep</dependentTest>
+							<dependentTest enabled="1">ac_gain</dependentTest>
+							<dependentTest enabled="1">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wn
+						<value>0.35u</value>
+						<dependentTests>
+							<dependentTest enabled="1">wdp_sweep</dependentTest>
+							<dependentTest enabled="1">wn_sweep</dependentTest>
+							<dependentTest enabled="1">ln_sweep</dependentTest>
+							<dependentTest enabled="1">wp_sweep</dependentTest>
+							<dependentTest enabled="1">dc_op</dependentTest>
+							<dependentTest enabled="1">vcm_sweep</dependentTest>
+							<dependentTest enabled="1">ac_gain</dependentTest>
+							<dependentTest enabled="1">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>60u</value>
+						<dependentTests>
+							<dependentTest enabled="1">wp_sweep</dependentTest>
+							<dependentTest enabled="1">dc_op</dependentTest>
+							<dependentTest omitted="0">wdp_sweep</dependentTest>
+							<dependentTest enabled="1">vcm_sweep</dependentTest>
+							<dependentTest omitted="0">ln_sweep</dependentTest>
+							<dependentTest enabled="1">ac_gain</dependentTest>
+							<dependentTest enabled="1">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>0.37u</value>
+						<dependentTests>
+							<dependentTest omitted="0">wp_sweep</dependentTest>
+							<dependentTest omitted="0">dc_op</dependentTest>
+							<dependentTest enabled="1">ac_gain</dependentTest>
+							<dependentTest enabled="1">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">iac
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="0">ac_rout</dependentTest>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+							<dependentTest omitted="0">dc_op</dependentTest>
+							<dependentTest omitted="0">ac_gain</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ldp
+						<value>0.647u</value>
+						<dependentTests>
+							<dependentTest enabled="1">ldp_sweep</dependentTest>
+							<dependentTest omitted="0">ac_rout</dependentTest>
+							<dependentTest omitted="0">dc_op</dependentTest>
+							<dependentTest omitted="0">ac_gain</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>wn_sweep</test>
+					<test>wdp_sweep</test>
+					<test>vcm_sweep</test>
+					<test>ln_sweep</test>
+					<test>wp_sweep</test>
+					<test>ldp_sweep</test>
+					<test>ac_rout</test>
+					<test>ac_gain</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Oct 5 15:07:26 2025</timestamp>
+			<resultsname>/afs/.ist.utl.pt/users/7/5/ist1117175/CADENCE/low_gm_ota/low_gm_ota_2/adexl/results/data/Interactive.2.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/fatima.novalocal_ist1117175_150726321</localpsfdir>
+			<psfdir>/afs/.ist.utl.pt/users/7/5/ist1117175/CADENCE/Sim/low_gm_ota/low_gm_ota_2/adexl/results/data/Interactive.2</psfdir>
+			<simdir>$AXL_PROJECT_DIR/low_gm_ota/low_gm_ota_2/adexl/results/data/Interactive.2</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/afs/.ist.utl.pt/users/7/5/ist1117175/CADENCE/low_gm_ota/low_gm_ota_2/adexl/results/data/Interactive.2.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

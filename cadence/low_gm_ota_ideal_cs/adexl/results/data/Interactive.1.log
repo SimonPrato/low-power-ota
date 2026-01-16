@@ -1,0 +1,24 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sun Oct  5 14:50:22 2025 
+Best design point: 1
+Design specs: 
+	ac_gain	corner	Nominal - 
+	ac_rout	corner	Nominal - 
+	(VF("/vout") / IF("/I7/MINUS"))		Error	No
+Design parameters: 
+	Ln		2.5u
+	vcm		300m
+	vd (local override)		0
+	Wdp		200u
+	Wn		350n
+	Wp		60u
+	Lp		370n
+	iac (local override)		0
+	Ldp		647n
+
+Interactive.1
+Number of points completed: 1
+Number of simulation errors: 1
+Interactive.1 completed. 
+Current time: Sun Oct  5 14:50:55 2025 

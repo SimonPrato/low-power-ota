@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      ist1117175
+HostName                       fatima2.novalocal
+ProcessIdentifier              11067
+ProcessCreationTime_UTC        1759396129
+ProcessCreationTime_Readable   Thu Oct  2 10:08:49 2025 WEST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /afs/.ist.utl.pt/users/7/5/ist1117175/CADENCE/low_gm_ota/low_gm_ota_2/schematic/sch.oa.cdslck.dirlck
+TimeEditLocked                 Thu Oct  2 10:12:23 2025 WEST

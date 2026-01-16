@@ -1,0 +1,22 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Fri Oct  3 16:18:53 2025 
+Best design point: 1
+Design specs: 
+	dc_op	corner	Nominal - 
+Design parameters: 
+	Ln		1u
+	vcm		300m
+	vd		0
+	Wdp		200u
+	Wn		350n
+	Wp		135.7u
+	Lp		350n
+	iac		0
+	Ldp		647n
+
+Interactive.2
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.2 completed. 
+Current time: Fri Oct  3 16:19:13 2025 

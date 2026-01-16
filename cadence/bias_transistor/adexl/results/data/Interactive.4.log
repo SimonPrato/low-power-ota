@@ -1,0 +1,16 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Oct  2 14:26:15 2025 
+Best design point: 1
+Design specs: 
+	vsg_sweep	corner	Nominal - 
+Design parameters: 
+	W		20.21u
+	L		350n
+	vsg		666.4m
+
+Interactive.4
+Number of points completed: 5
+Number of simulation errors: 0
+Interactive.4 completed. 
+Current time: Thu Oct  2 14:26:47 2025 
