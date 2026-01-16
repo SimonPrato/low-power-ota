@@ -1,4 +1,5 @@
 # Low-Power Operational Transconductance Amplifier (OTA)
+
 ## Project Overview
 
 This project implements a low-power operational transconductance amplifier (OTA) designed in Cadence, operating at VDD = 1V with a bias current of 1µA. The goal was to achieve a transconductance amplifier with Gm < 5µS while minimizing power consumption.
@@ -24,6 +25,12 @@ The PMOS input transistors were designed to operate in the weak inversion region
 
 **Rationale:** Weak inversion provides high transconductance efficiency (gm/ID ratio), enabling low-power operation. The increased channel length elevates the threshold voltage, further enhancing the gm/ID ratio.
 
+<p align="center">
+  <img src="img/gm_id_ratio.png" alt="gm/ID ratio vs gate-source voltage" width="45%">
+  <img src="img/threshold_voltage.png" alt="Threshold voltage vs channel length" width="45%">
+</p>
+<p align="center"><em>Figure 1: PMOS gm/ID ratio (left) and threshold voltage dependency on channel length (right)</em></p>
+
 ### 2. Input Common Mode Range
 
 The design achieves an input common mode voltage range of approximately 100mV to 650mV:
@@ -40,6 +47,11 @@ Below 100mV, the PMOS differential pair's gds increases dramatically, reducing g
 - **Issue:** Could not simultaneously achieve Gm < 5µS and proper DC biasing
 - **Result:** Gm = 11.8µS (exceeded specification)
 
+<p align="center">
+  <img src="img/initial_gain.png" alt="Initial OTA gain" width="60%">
+</p>
+<p align="center"><em>Figure 2: Initial design AC gain response</em></p>
+
 #### Final Design: Series/Parallel Configuration
 
 The breakthrough came from implementing a series/parallel NMOS current mirror with N = 2 transistors per branch:
@@ -51,6 +63,16 @@ The breakthrough came from implementing a series/parallel NMOS current mirror wi
   - Increased output impedance (Rout = 8.67MΩ)
   - Larger headroom for input common mode range
   - Achieved **Gm = 3.50µS** ✓ (meets specification)
+
+<p align="center">
+  <img src="img/gm_vs_nmos_length.png" alt="gm vs NMOS channel length" width="60%">
+</p>
+<p align="center"><em>Figure 3: Input pair gm versus NMOS current mirror channel length at VCM = 0V</em></p>
+
+<p align="center">
+  <img src="img/final_gain.png" alt="Final OTA gain" width="60%">
+</p>
+<p align="center"><em>Figure 4: Final design AC gain response at VCM = 300mV</em></p>
 
 ### 4. PMOS Current Mirror
 
@@ -67,6 +89,11 @@ The ideal current source was replaced with a PMOS transistor (M0):
 - **Biasing:** VSG = 677.30mV (Vbias = 322.7mV)
 - **Saturation Voltage:** Vdsat ≈ 60mV (provides 100mV headroom as specified)
 - **Channel Length Rationale:** Increased to L = 1µm to reduce channel length modulation (λ effect)
+
+<p align="center">
+  <img src="img/bias_current_sweep.png" alt="Bias current vs VSG and width" width="60%">
+</p>
+<p align="center"><em>Figure 5: Biasing current dependency on source-gate voltage and PMOS width</em></p>
 
 ## Performance Metrics
 
@@ -87,6 +114,22 @@ The final schematic consists of:
 - **M3-M6:** NMOS series/parallel current mirror (parallel at input, series at output)
 - **M7-M12:** PMOS current mirror providing active loads
 
+<p align="center">
+  <img src="img/final_schematic.png" alt="Final OTA schematic" width="80%">
+</p>
+<p align="center"><em>Figure 6: Final schematic with DC node voltages and transistor labels</em></p>
+
+### Transistor Operating Points
+
+| Transistor | Vdsat | Vt | gm | gds | IDS | Operation Region |
+|-----------|-------|-----|-----|-----|-----|------------------|
+| M0 | 57.2 mV | 729.5 mV | 23.8 µS | 461.7 nS | 1.01 µA | Strong inversion, Saturation |
+| M1, M2 | 46.7 mV | 732.7 mV | 13.4 µS | 120.7 nS | 0.5 µA | **Weak inversion** |
+| M3, M4 | 46.5 mV | 712.4 mV | 3.6 µS | 109.8 nS | 134.5 nA | Strong inversion, Saturation |
+| M5, M6 | 74.0 mV | 491.1 mV | 2.4 µS | 8.0 nS | 134.5 nA | Strong inversion, Saturation |
+| M7, M8 | 93.8 mV | 491.1 mV | 1.5 µS | 2.6 µS | 134.5 nA | Strong inversion, Triode |
+| M9-M12 | 93.8 mV | 491.1 mV | 3.8 µS | 11.8 nS | 253.1 nA | Strong inversion, Saturation |
+
 ## Key Findings
 
 1. **Weak Inversion Efficiency:** Operating the input pair in weak inversion achieves gm/ID ratios approaching the theoretical limit, crucial for ultra-low-power designs.
@@ -96,6 +139,11 @@ The final schematic consists of:
 3. **Design Trade-offs:** Achieving VDD/2 output biasing required larger PMOS mirror dimensions, which compromised gds minimization. This represents the fundamental trade-off between DC biasing and AC performance.
 
 4. **Common Mode Sensitivity:** The OTA's performance is highly dependent on input common mode voltage due to internal biasing constraints in a 1V supply environment.
+
+<p align="center">
+  <img src="img/gain_vs_vcm.png" alt="Gain vs common mode voltage" width="60%">
+</p>
+<p align="center"><em>Figure 7: OTA gain dependency on input common mode voltage</em></p>
 
 ## Simulation Results
 
